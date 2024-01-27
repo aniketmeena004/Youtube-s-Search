@@ -1,94 +1,207 @@
-body{
-    background-color: rgb(242, 238, 238);
-    margin-top: 15vh;
-    margin-left: 5%;
-    margin-right: 5%;
+@font-face {
+    font-family: googlefont;
+    src: url(esDR31xSG-6AGleN6tKukbcHCpE.ttf);
 }
 
-.google-container{
-    /* background-color: brown; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-
-}
-.google-logo{
-    width: 100%;
-    height: 100%;
-    transition: all 0.2 ease;
-}
-
-.google-logo:active{
-    transform: scale(0.96);
-}
-
-.box1{
-    /* background-color: aqua; */
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-}
-.box2{
-    /* background-color: darkblue; */
-    width: 50%;
-    
-}
-form{
-    
-    height: 100%; width: 100%;
+body {
+    background-color: #FFFFFF;
+    margin: 17px;
+    /* min-width: 50vh; */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+
+.google-container {
+    background-color: #cad1cbc8;
+    color: white;
+    /* margin: 10%; */
+    display: flex;
     align-items: center;
-    align-content: center;
-    justify-content: space-around;
-}
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.search-input{
-    background-color: rgba(0, 0, 0, 0.756);
-    width: 80%;
-    height: 25%;
-    border: 3px solid red;
     border-radius: 50px;
-    padding-left: 10%;
-    font-size: large;
-    color: azure;
+    height: 90vh;
+    overflow: hidden;
+    transition: all 0.2s ease;
 }
-.search-button{
+.google-container:hover{
+    box-shadow: 3px 3px 20px black;
+}
+
+.main-box {
+
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    overflow: hidden;
+
+}
+
+.firstbox {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+}
+
+.secondbox>form {
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.secondbox {
+    /* background-color: orangered; */
+    display: flex;
+    width: 37%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+form>input {
+
+    width: 90%;
+    background-color: #202124;
+    color: #FFFFFF;
+    border-color: white;
+    border-radius: 9px;
+    font-size: 150%;
+    font-family: googlefont;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    transition: all 0.4s ease;
+}
+
+.search-input:hover {
+    transform: scale(1.02);
+    background-color: #303134;
+}
+
+form>button {
+    border-radius: 50%;
+    border-color: #19347F;
     background-size: cover;
-    background-image: url(logo.png);
-    border: 0px;
-    width: 10vw;
-    height: 10vw;
-    transition: all 0.2 ease;
-    /* border-radius: 50px; */
-}
-.search-button:active{
-    transform: scale(0.96);
+    background-image: url("search2.svg");
+    height: 100px;
+    width: 100px;
+    background-color: #19347F;
+    box-shadow: 5px 5px 20px #19347F;
+    transition: all 0.09s ease-in;
+    cursor: pointer;
 }
 
-@media(700px >= width){
-    .google-container{
+.search-button:hover {
+    transform: scale(1.05);
+}
+
+.search-button:active {
+
+    transform: rotate(45deg);
+    /* transform: scale(1.05); */
+}
+
+.google-logo {
+    transition: all 0.2s ease;
+}
+
+.google-logo:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width:975px) {
+    body {
+        background-color: red;
+    }
+
+    .main-box {
+        display: flex;
         flex-direction: column;
-        height: 70%;
+        height: 60%;
     }
-    .search-form{
-        flex-direction: row;
-        width: 80vw;
-        height: 25vw;
-        justify-content: space-between;
-    }
-    .search-input{
-        height: 25%;
-        font-size: large;
-    }
-    .search-button{
-        width: 12vh;
-        height: 10vh;
-    }
-    
 
-    
+    .firstbox {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .secondbox {
+        width: 100%;
+    }
+
+    .secondbox>form {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .secondbox>form>input {
+        width: 70%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .secondbox>form>.search-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .firstbox>a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .firstbox>a>img {
+        height: 100%;
+        width: 80%;
+    }
+
 }
+
+@media (max-width:500px) {
+    .secondbox>form>.search-button {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+.themebox {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.themebox > button{
+    cursor: pointer;
+}
+
+
+.dark {
+    background-color: #202124;
+    color: #FFFFFF;
+}
+
+.dark .google-container {
+    background-color: #1E1E1E;
+    color: white;
+}
+
+/* Add more styles for dark theme as needed */
