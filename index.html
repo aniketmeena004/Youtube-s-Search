@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube's Search</title>
     <link rel="stylesheet" href="style.css">
-    <link rel = "icon" href = "https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_%282017%29.svg"
-        type = "image/x-icon"> 
+    <link rel = "icon" href = "https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_%282017%29.svg"> 
 </head>
 <body>
+    <script src="script.js"></script>
     <div class="google-container">
-        <div class="box">
-            <a href="https://www.youtube.com"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="Google Logo" class="google-logo"></a>
-
+        <div class="themebox">
+            <button id="theme-toggle" onclick="toggleTheme()">Dark Theme : On / Off</button>
         </div>
-        <div class="box2">
-            <form action="https://www.youtube.com/search" method="GET" class="search-form">
-                <input type="text" name="q" placeholder="Search Here" class="search-input" required>
-                
-                <button type="submit" class="search-button"></button>
-            </form>
+        <div class="main-box">
+            <div class="firstbox">
+                <a href="https://www.youtube.com"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="Google Logo" class="google-logo"></a>
+            </div>
+            <div class="secondbox">
+                <form action="https://www.youtube.com/search" method="GET" class="search-form">
+                    <input type="text" name="q" placeholder="Search Here" class="search-input" required>                
+                    <button type="submit" class="search-button"></button>
+                </form>
+            </div>
         </div>
+        
     </div>
 
 
