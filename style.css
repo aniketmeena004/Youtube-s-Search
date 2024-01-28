@@ -205,7 +205,7 @@ form>button {
 }
 
 .dark .google-container:hover{
-    box-shadow: 3px 3px 20px rgb(101, 101, 101);
+    box-shadow: 3px 3px 20px black;
 }
 .dark form input{
     background-color: #202124;
