@@ -76,8 +76,8 @@ body {
 form>input {
 
     width: 90%;
-    background-color: #202124;
-    color: #FFFFFF;
+    background-color: white;
+    color: #202124;
     border-color: white;
     border-radius: 9px;
     font-size: 150%;
@@ -90,7 +90,7 @@ form>input {
 
 .search-input:hover {
     transform: scale(1.02);
-    background-color: #303134;
+    /* background-color: #303134; */
 }
 
 form>button {
@@ -126,7 +126,7 @@ form>button {
 
 @media (max-width:975px) {
     body {
-        
+        /* background-color: red; */
     }
 
     .main-box {
@@ -207,5 +207,8 @@ form>button {
 .dark .google-container:hover{
     box-shadow: 3px 3px 20px rgb(101, 101, 101);
 }
-
+.dark form input{
+    background-color: #202124;
+    color: white;
+}
 /* Add more styles for dark theme as needed */
