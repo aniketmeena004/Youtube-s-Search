@@ -200,8 +200,12 @@ form>button {
 }
 
 .dark .google-container {
-    background-color: #1E1E1E;
+    background-color: #5c5c5c;
     color: white;
+}
+
+.dark .google-container:hover{
+    box-shadow: 3px 3px 20px rgb(101, 101, 101);
 }
 
 /* Add more styles for dark theme as needed */
