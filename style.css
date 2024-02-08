@@ -123,8 +123,12 @@ form>button {
 .google-logo:hover {
     transform: scale(1.02);
 }
-
-@media (max-width:975px) {
+@media (max-width:1000px) {
+    .main-box {
+        gap: 10px;
+    }
+}
+@media (max-width:792px) {
     body {
         /* background-color: red; */
     }
